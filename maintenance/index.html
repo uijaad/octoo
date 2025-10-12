@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       <script>
+        function go(url){
+            window.location.href = (url);
+        }
+        
+    </script>
+
+</head>
+<body>
+    <div class="main-header">
+    <div class="side-nav-parent">
+        <div class="side-nav">
+            <img id="logo" src="../img/logo.png" alt="">
+            <div class="small-line"></div>
+            <div class="icons-nav">
+            <!-- home icon -->
+            <img onclick="go('/..')" src="../img/svg/todo.svg" alt="" srcset="">
+            <!-- completed icon -->
+            <img onclick="go('/completed')" src="../img/svg/completed.svg" alt="" srcset="">
+            <!-- logs icon -->
+            <img onclick="go('../maintenance')" src="../img/svg/logs.svg" alt="" srcset="">
+             <!-- trash icon -->
+            <img onclick="go('../maintenance')" id="trash" src="../img/svg/trash.svg" alt="" srcset="">
+             <!-- info icon -->
+            <img onclick="go('../maintenance')" src="../img/svg/info.svg" alt="" srcset="">
+             <!-- profile pic -->
+            <img onclick="go('../maintenance')" id="profile" src="../img/profile-pic.jpg" alt="" srcset="">
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="tasks-panel-parent">
+        <div class="tasks-panel">
+            <h3><span>Octoo / </span>Maintenance</h3>
+            <div class="large-line"></div>
+            <h2>Maintenance</h2>
+            <div class="buttons-section">
+            
+            </div>
+            <div class="large-line"></div>
+            <div class="large-line" id="large-line2"></div>
+            <div class="taskPanelParent"  id="taskPanelParent">
+            <h2>
+            The beta version of <strong>Mega Team Task</strong> has been completed.  
+            <br>This version includes all planned core features.  
+            <br>Soon, I’ll be releasing an upgraded open-source version with new improvements.  
+            <br><br><strong>@uijaad - Octoo to do list website</strong>
+            </h2>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list - mega team</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       <script>
+        function go(url){
+            window.location.href = (url);
+        }
+        
+    </script>
+
+</head>
+<body>
+    <div class="main-header">
+    <div class="side-nav-parent">
+        <div class="side-nav">
+            <img id="logo" src="img/logo.png" alt="">
+            <div class="small-line"></div>
+            <div class="icons-nav">
+            <!-- home icon -->
+            <img src="img/svg/todo.svg" alt="" srcset="">
+            <!-- completed icon -->
+            <img onclick="go('/completed')" src="img/svg/completed.svg" alt="" srcset="">
+            <!-- logs icon -->
+            <img onclick="go('/maintenance')" src="img/svg/logs.svg" alt="" srcset="">
+             <!-- trash icon -->
+            <img onclick="go('/maintenance')" id="trash" src="img/svg/trash.svg" alt="" srcset="">
+             <!-- info icon -->
+            <img onclick="go('/maintenance')" src="img/svg/info.svg" alt="" srcset="">
+             <!-- profile pic -->
+            <img onclick="go('/maintenance')" id="profile" src="img/profile-pic.jpg" alt="" srcset="">
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="tasks-panel-parent">
+        <div class="tasks-panel">
+            <h3><span>Octoo / </span>Tasks</h3>
+            <div class="large-line"></div>
+            <h2>Tasks</h2>
+            <div class="buttons-section">
+            <button id="newTaskBtn"><img src="img/svg/add.svg"> New Task</button>
+            
+            </div>
+            <div class="large-line"></div>
+            <div class="newTaskSection" id="newTaskSection">
+            <input id="taskInput" type="text" placeholder="Task info ..">
+            <button id="addTask"><img src="img/svg/add.svg"> Add</button>
+            </div><br>
+            <div class="large-line" id="large-line2"></div>
+            <div class="taskPanelParent"  id="taskPanelParent">
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
